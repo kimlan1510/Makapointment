@@ -1,4 +1,5 @@
 ﻿using Makapointment.Models;
+using Makapointment.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,9 @@ namespace Makapointment
         public ShopsPage()
         {
             InitializeComponent();
+
+            var conn = DependencyService.Get<ISQLiteDb>().GetConnection();
+            conn.CreateTableAsync<Shop>();
             listView.ItemsSource = GetShops();
 
             
