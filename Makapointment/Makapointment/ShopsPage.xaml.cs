@@ -21,15 +21,17 @@ namespace Makapointment
             InitializeComponent();
 
             _conn = DependencyService.Get<ISQLiteDb>().GetConnection();
-            
+                        
+
         }
 
         protected override async void OnAppearing()
         {
             await _conn.CreateTableAsync<Shop>();
             shops = await _conn.Table<Shop>().ToListAsync();
-
             listView.ItemsSource = shops;
+
+            base.OnAppearing();
         }
 
         IEnumerable<Shop> GetShops(string searchText = null)

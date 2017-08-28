@@ -5,8 +5,7 @@
              >
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Favorite page me" />
-            
+            <Image Source="http://lorempixel.com/400/200"/>
    
         </StackLayout>
     </ContentPage.Content>

@@ -6,7 +6,7 @@
     <!--<ContentPage.ToolbarItems>
         <ToolbarItem Order="Primary" Icon="Search.png" Activated="ToolbarItem_Activated"/>
     </ContentPage.ToolbarItems>-->
-    <ScrollView x:Name="scrollView">
+    <ScrollView>
         <StackLayout x:Name="outerStackLayout">
             <SearchBar Placeholder="Find shops" TextChanged="SearchBar_TextChanged"/>
             
@@ -22,6 +22,7 @@
                                 </StackLayout>
                                 <Button Text="Reserve" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
+
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
