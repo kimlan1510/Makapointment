@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Makapointment.ShopsPage">
+
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary" Icon="Search.png" Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>-->
+    <ScrollView x:Name="scrollView">
+        <StackLayout x:Name="outerStackLayout">
+            <SearchBar Placeholder="Find shops" TextChanged="SearchBar_TextChanged"/>
+            
+            <ListView x:Name="listView" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding Image}"/>
+                                <StackLayout>
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Location}"/>
+                                </StackLayout>
+                                <Button Text="Reserve" HorizontalOptions="EndAndExpand"/>
+                            </StackLayout>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+    </ScrollView>
+    
+    
+</ContentPage>
