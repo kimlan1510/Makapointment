@@ -18,6 +18,7 @@
                 </Button.BorderRadius>
             </Button>
             <Button Text="normal button"/>
+            <Label Text="Do"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
