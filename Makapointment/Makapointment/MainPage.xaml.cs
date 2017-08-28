@@ -14,5 +14,10 @@ namespace Makapointment
             InitializeComponent();
             
         }
+
+        private void ToolbarItem_Activated(object sender, EventArgs e)
+        {
+            DisplayAlert("Action", "Clicked", "ok");
+        }
     }
 }

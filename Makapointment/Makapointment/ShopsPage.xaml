@@ -10,7 +10,7 @@
         <StackLayout x:Name="outerStackLayout">
             <SearchBar Placeholder="Find shops" TextChanged="SearchBar_TextChanged"/>
             
-            <ListView x:Name="listView" HasUnevenRows="True">
+            <ListView x:Name="listView" HasUnevenRows="False">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -23,13 +23,20 @@
                                 <Button Text="Reserve" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
                         </ViewCell>
-
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <!--<AbsoluteLayout>
+                <Button Text="+"
+                        TextColor="White"
+                        BackgroundColor="Aqua"
+                        />
+
+            </AbsoluteLayout>-->
+            <!--<Button Text="+"
+                    VerticalOptions="End"/>-->
         </StackLayout>
-        
     </ScrollView>
-    
-    
+
+
 </ContentPage>

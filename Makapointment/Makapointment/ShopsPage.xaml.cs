@@ -25,19 +25,7 @@ namespace Makapointment
             var shops = new List<Shop> {
                 new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
                 new Shop {Name = "David barber", Location="Beaverton", PhoneNumber="503 213 1234", Image="http://lorempixel.com/400/200"},
-                 new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                  new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                   new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                    new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                     new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                      new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                       new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                        new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                         new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                          new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                           new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                            new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"},
-                             new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"}
+                new Shop {Name = "John's haircut", Location="Portland", PhoneNumber="971 123 3213", Image="http://lorempixel.com/400/200/"}
             };
             if (String.IsNullOrWhiteSpace(searchText))
                 return shops;

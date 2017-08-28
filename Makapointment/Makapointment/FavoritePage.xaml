@@ -6,19 +6,8 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Favorite page me" />
-            <Button HorizontalOptions="Fill" VerticalOptions="Fill" Text="+">
-                <Button.WidthRequest>
-                    <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="80" />
-                </Button.WidthRequest>
-                <Button.HeightRequest>
-                    <OnIdiom x:TypeArguments="x:Double" Phone="60" Tablet="80" />
-                </Button.HeightRequest>
-                <Button.BorderRadius>
-                    <OnIdiom x:TypeArguments="x:Int32" Phone="30" Tablet="40" />
-                </Button.BorderRadius>
-            </Button>
-            <Button Text="normal button"/>
-            <Label Text="Do"/>
+            
+   
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
