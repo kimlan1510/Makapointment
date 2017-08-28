@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Makapointment.CreateShopPage"
+             xmlns:local="clr-namespace:Makapointment">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Check.png" Text="Check Mark" Order="Primary" Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>
+    <TableView Intent="Form" x:Name="shopForm">
+        <TableRoot>
+            <TableSection>
+                <ViewCell>
+                     <AbsoluteLayout>
+                            <Image Source="Business.png" AbsoluteLayout.LayoutBounds="0.1, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                            <Entry x:Name="Name" Placeholder="Name of your shop " AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>                          
+                    </AbsoluteLayout>
+                </ViewCell>
+                <ViewCell>
+                    <AbsoluteLayout>
+                        <Image Source="Location.png" AbsoluteLayout.LayoutBounds="0.1, 0.5, 24, 24" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                        <Entry x:Name="Location" Placeholder="Location of your shop " AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    </AbsoluteLayout>
+                </ViewCell>
+                <ViewCell>
+                    <AbsoluteLayout>
+                        <Image Source="Phone.png" AbsoluteLayout.LayoutBounds="0.1, 0.5, 24, 24" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                        <Entry x:Name="Phone" Keyboard="Numeric" Placeholder="Phone numbers " AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    </AbsoluteLayout>
+                </ViewCell>
+                
+            </TableSection>
+        </TableRoot>
+    </TableView>
+    
+</ContentPage>

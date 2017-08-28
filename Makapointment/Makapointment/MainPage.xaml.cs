@@ -15,9 +15,10 @@ namespace Makapointment
             
         }
 
-        private void ToolbarItem_Activated(object sender, EventArgs e)
+        private async void ToolbarItem_Activated(object sender, EventArgs e)
         {
-            DisplayAlert("Action", "Clicked", "ok");
+            await Navigation.PushAsync(new CreateShopPage());
+            
         }
     }
 }
