@@ -5,8 +5,8 @@
              >
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="http://lorempixel.com/400/200"/>
-            <AbsoluteLayout BackgroundColor="Aqua">
+            <Image Source="http://lorempixel.com/600/400" Aspect="AspectFill"/>
+            <AbsoluteLayout>
                 <!--<StackLayout Orientation="Horizontal" BackgroundColor="Aqua" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">-->
                     <Image Source="Business" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
                     <Entry Placeholder="Entry" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>

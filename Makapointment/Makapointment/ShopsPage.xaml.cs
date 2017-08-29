@@ -48,9 +48,11 @@ namespace Makapointment
             listView.ItemsSource = GetShops(e.NewTextValue);
         }
 
-        private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            DisplayAlert("ItemTappeds", "Tapped", "ok");
+            var shop = e.Item as Shop;
+            await Navigation.PushAsync( new ShopDetailPage(shop));
+            
         }
 
         private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)

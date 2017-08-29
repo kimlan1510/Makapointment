@@ -9,7 +9,7 @@
     <ScrollView>
         <StackLayout x:Name="outerStackLayout">
             <SearchBar Placeholder="Find shops" TextChanged="SearchBar_TextChanged"/>
-            
+
             <ListView x:Name="listView" HasUnevenRows="False" ItemTapped="listView_ItemTapped" ItemSelected="listView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -31,15 +31,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <!--<AbsoluteLayout>
-                <Button Text="+"
-                        TextColor="White"
-                        BackgroundColor="Aqua"
-                        />
-
-            </AbsoluteLayout>-->
-            <!--<Button Text="+"
-                    VerticalOptions="End"/>-->
         </StackLayout>
     </ScrollView>
 

@@ -7,30 +7,19 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Icon="Check.png" Text="Check Mark" Order="Primary" Activated="ToolbarItem_Activated"/>
     </ContentPage.ToolbarItems>
-    <TableView Intent="Form" x:Name="shopForm">
-        <TableRoot>
-            <TableSection>
-                <ViewCell>
-                     <AbsoluteLayout>
-                            <Image Source="Business.png" AbsoluteLayout.LayoutBounds="0.1, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                            <Entry x:Name="Name" Placeholder="Name of your shop " AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>                          
-                    </AbsoluteLayout>
-                </ViewCell>
-                <ViewCell>
-                    <AbsoluteLayout>
-                        <Image Source="Location.png" AbsoluteLayout.LayoutBounds="0.1, 0.5, 24, 24" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                        <Entry x:Name="Location" Placeholder="Location of your shop " AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                    </AbsoluteLayout>
-                </ViewCell>
-                <ViewCell>
-                    <AbsoluteLayout>
-                        <Image Source="Phone.png" AbsoluteLayout.LayoutBounds="0.1, 0.5, 24, 24" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                        <Entry x:Name="Phone" Keyboard="Numeric" Placeholder="Phone numbers " AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                    </AbsoluteLayout>
-                </ViewCell>
-                
-            </TableSection>
-        </TableRoot>
-    </TableView>
-    
+    <StackLayout>
+        <AbsoluteLayout>
+            <Image Source="Business.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Name" Placeholder="Name" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="Location.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Location" Placeholder="Location" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="Phone.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Phone" Placeholder="Phone" Keyboard="Numeric" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+    </StackLayout>
+
 </ContentPage>

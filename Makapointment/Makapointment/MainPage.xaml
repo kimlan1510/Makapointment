@@ -1,21 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Makapointment"
-             x:Class="Makapointment.MainPage">
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Makapointment"
+            x:Class="Makapointment.MainPage">
     <TabbedPage.ToolbarItems>
         <ToolbarItem Text="+" Icon="Plus.png" Order="Primary" Activated="ToolbarItem_Activated"/>
     </TabbedPage.ToolbarItems>
 
-    <!--<NavigationPage Title="Favorite">
-        <Label Text="Favorite Page"/>
-    </NavigationPage>-->
-    <!--<NavigationPage Title="All">
-        <x:Arguments>
-            <local:ShopsPage/>
-        </x:Arguments>
-    </NavigationPage>-->
     <local:FavoritePage Title="Favorites"/>
     <local:ShopsPage Title="Shops"/>
-    
+
 </TabbedPage>
