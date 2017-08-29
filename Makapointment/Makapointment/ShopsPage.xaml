@@ -10,10 +10,14 @@
         <StackLayout x:Name="outerStackLayout">
             <SearchBar Placeholder="Find shops" TextChanged="SearchBar_TextChanged"/>
             
-            <ListView x:Name="listView" HasUnevenRows="False">
+            <ListView x:Name="listView" HasUnevenRows="False" ItemTapped="listView_ItemTapped" ItemSelected="listView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Delete" Clicked="MenuItem_Delete" CommandParameter="{Binding .}"/>
+                                <MenuItem Text="Edit" Clicked="MenuItem_Edit" CommandParameter="{Binding .}"/>
+                            </ViewCell.ContextActions>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding Image}"/>
                                 <StackLayout>
