@@ -25,12 +25,21 @@ namespace Makapointment
 
         private async void ToolbarItem_Activated(object sender, EventArgs e)
         {
-            var name = Name.Text;
-            var location = Location.Text;
-            var phone = Phone.Text;
-            Shop newShop = new Shop { Name = name, Location = location, PhoneNumber = phone };
-            await _conn.InsertAsync(newShop);
-            await Navigation.PopAsync();
+            if (String.IsNullOrWhiteSpace(Name.Text) || String.IsNullOrWhiteSpace(Location.Text) || String.IsNullOrWhiteSpace(Phone.Text))
+            {
+                await DisplayAlert("Creat Shop", "Do not leave any field blank", "Ok");
+
+            }
+            else
+            {
+                var name = Name.Text;
+                var location = Location.Text;
+                var phone = Phone.Text;
+                Shop newShop = new Shop { Name = name, Location = location, PhoneNumber = phone };
+                await _conn.InsertAsync(newShop);
+                await Navigation.PopAsync();
+
+            }
            
 
         }

@@ -69,7 +69,10 @@ namespace Makapointment
 
         private void MenuItem_Edit(object sender, EventArgs e)
         {
+            var menuItem = ((MenuItem)sender);
+            var shop = menuItem.CommandParameter as Shop;
 
+            Navigation.PushAsync(new EditShopPage(shop));
         }
     }
 }

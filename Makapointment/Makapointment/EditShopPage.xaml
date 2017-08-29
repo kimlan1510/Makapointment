@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Makapointment.EditShopPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Check.png" Text="Check Mark" Order="Primary" Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <AbsoluteLayout>
+            <Image Source="Business.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Name" Placeholder="{Binding Name}" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="Location.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Location" Placeholder="{Binding Location}" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="Phone.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Phone" Placeholder="{Binding PhoneNumber}" Keyboard="Numeric" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+    </StackLayout>
+</ContentPage>
