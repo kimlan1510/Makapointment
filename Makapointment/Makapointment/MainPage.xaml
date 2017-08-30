@@ -5,10 +5,12 @@
             x:Class="Makapointment.MainPage"
             BackgroundColor="Firebrick">
     <TabbedPage.ToolbarItems>
-        <ToolbarItem Text="+" Icon="Plus.png" Order="Primary" Activated="ToolbarItem_Activated"/>
+        <ToolbarItem Text="+" Icon="Shop.png" Order="Primary" Activated="AddShop"/>
+        <ToolbarItem Text="stylist" Icon="Person.png" Order="Primary" Activated="AddStylist"/>
     </TabbedPage.ToolbarItems>
 
     <local:FavoritePage Title="Favorites"/>
     <local:ShopsPage Title="Shops"/>
+    <local:StylistsPage Title="Stylists"/>
 
 </TabbedPage>

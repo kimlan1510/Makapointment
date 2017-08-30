@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Makapointment"
+            x:Class="Makapointment.ShopDetailPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Person.png" Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>
+    
+    
+    <RelativeLayout>
+        <Image x:Name="image" Source="{Binding Image}" Aspect="AspectFill"
+                RelativeLayout.WidthConstraint="{ConstraintExpression 
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=1}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.3}"/>
+        <Label x:Name="name" Text="{Binding Name}" TextColor="White" FontSize="Medium"
+               RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Height,
+                    Factor=1,
+                    Constant = -30}"
+               RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=X,
+                    Factor=1,
+                    Constant = 20}"/>
+        <Label Text="{Binding PhoneNumber}" TextColor="White" FontSize="Medium" HorizontalOptions="EndAndExpand"
+               RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=name,
+                    Property=Y,
+                    Factor=1,
+                    Constant = 0}"
+               RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=name,
+                    Property=Width,
+                    Factor=1,
+                    Constant = 40}"/>
+        <Button Text="Reserve" TextColor="White" BackgroundColor="CornflowerBlue"
+                RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Height,
+                    Factor=1,
+                    Constant = 0}"
+                RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Width,
+                    Factor=0.25,
+                    Constant = 0}"/>
+        <Button Text="Direction" TextColor="White" BackgroundColor="CornflowerBlue"
+                RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Height,
+                    Factor=1,
+                    Constant = 0}"
+                RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Width,
+                    Factor=0.55,
+                    Constant = 0}"/>
+
+        <ScrollView  RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Height,
+                    Factor=1,
+                    Constant = 40}"
+                RelativeLayout.XConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=image,
+                    Property=Width,
+                    Factor=0,
+                    Constant = 0}">
+            <StackLayout>
+                <ListView x:Name="listView" HasUnevenRows="False" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.ContextActions>
+                                    <MenuItem Text="Delete" Clicked="MenuItem_Delete" CommandParameter="{Binding .}"/>
+                                    <MenuItem Text="Edit" Clicked="MenuItem_Edit" CommandParameter="{Binding .}"/>
+                                </ViewCell.ContextActions>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image x:Name="StylistImage" Source="{Binding Image}"/>
+                                    <StackLayout>
+                                        <Label x:Name="StylistName" Text="{Binding Name}"/>
+                                        <Label x:Name="StylistDescription" Text="{Binding Description}"/>
+                                    </StackLayout>
+                                    <Button Text="Reserve" HorizontalOptions="EndAndExpand" TextColor="White" BackgroundColor="CornflowerBlue"/>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</ContentPage>

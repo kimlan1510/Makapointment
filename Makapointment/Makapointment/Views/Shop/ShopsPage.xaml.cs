@@ -1,6 +1,7 @@
 ﻿using Makapointment.Models;
 using Makapointment.Persistence;
 using SQLite;
+using SQLite.Net.Async;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

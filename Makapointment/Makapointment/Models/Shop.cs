@@ -1,4 +1,6 @@
 ﻿using SQLite;
+using SQLite.Net.Attributes;
+using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +19,13 @@ namespace Makapointment.Models
         public string Location { get; set; }
         public string PhoneNumber { get; set; }
         public string Image { get; set; }
+        [ManyToMany(typeof(Shop_Stylist), CascadeOperations =  CascadeOperation.CascadeRead | CascadeOperation.CascadeInsert)]
+        public List<Stylist> Stylists { get; set; }
 
         public Shop()
         {
             Image = "http://lorempixel.com/600/400";
+            Stylists = new List<Stylist>();
         }
         
     }

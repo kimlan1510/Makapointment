@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Makapointment.EditStylistPage"
+             BackgroundColor="Firebrick">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="Check.png" Text="Check Mark" Order="Primary" Activated="ToolbarItem_Activated"/>
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <AbsoluteLayout>
+            <Image Source="Person.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Name" Text="{Binding Name}" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+        <AbsoluteLayout>
+            <Image Source="Description.png" AbsoluteLayout.LayoutBounds="0.065, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Entry x:Name="Description" Text="{Binding Description}" AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.65, 1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+        
+    </StackLayout>
+</ContentPage>

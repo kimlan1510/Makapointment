@@ -2,8 +2,12 @@
 using Makapointment.Droid.Persistence;
 using Makapointment.Persistence;
 using SQLite;
+using SQLite.Net.Async;
+using SQLite.Net.Platform.XamarinAndroid;
 using System.IO;
 using Xamarin.Forms;
+using SQLitePCL;
+using SQLite.Net;
 
 [assembly: Dependency(typeof(SQLiteDb))]
 namespace Makapointment.Droid.Persistence
@@ -15,8 +19,10 @@ namespace Makapointment.Droid.Persistence
         {
             var documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             var path = Path.Combine(documentsPath, "MySQLite.db3");
+            var connectionString = new SQLiteConnectionString(path, false);
+            var connectionWithLock = new SQLiteConnectionWithLock(new SQLitePlatformAndroid(), connectionString);
 
-            return new SQLiteAsyncConnection(path);
+            return new SQLiteAsyncConnection(() => connectionWithLock);
         }
     }
     

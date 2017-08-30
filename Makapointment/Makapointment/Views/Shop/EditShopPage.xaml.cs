@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SQLite;
 using Makapointment.Persistence;
+using SQLite.Net.Async;
 
 namespace Makapointment
 {
@@ -19,9 +20,7 @@ namespace Makapointment
 
         public EditShopPage(Shop shop)
         {
-            if (shop == null)
-                throw new ArgumentNullException();
-            _shop = shop;
+            _shop = shop ?? throw new ArgumentNullException();
             BindingContext = _shop;
 
             InitializeComponent();
