@@ -2,7 +2,8 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:local="clr-namespace:Makapointment"
-            x:Class="Makapointment.MainPage">
+            x:Class="Makapointment.MainPage"
+            BackgroundColor="Firebrick">
     <TabbedPage.ToolbarItems>
         <ToolbarItem Text="+" Icon="Plus.png" Order="Primary" Activated="ToolbarItem_Activated"/>
     </TabbedPage.ToolbarItems>

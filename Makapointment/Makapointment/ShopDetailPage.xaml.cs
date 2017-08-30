@@ -14,7 +14,10 @@ namespace Makapointment
     {
         public ShopDetailPage(Shop shop)
         {
+            if (shop == null)
+                throw new ArgumentNullException();
             
+            BindingContext = shop;
             InitializeComponent();
             
         }
