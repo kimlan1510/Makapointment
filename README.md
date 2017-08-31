@@ -15,11 +15,11 @@ Shops page <br/>
  ![FavoritePage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Favorite%20Page.PNG) <br/>
  Stylists page <br/>
  ![StylistsPage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Stylists%20Page.PNG) <br/>
- Shop detail page
+ Shop detail page <br/>
  ![ShopDetailPage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Shop%20Detail.PNG) <br/>
- Create shop page
+ Create shop page <br/>
  ![CreateShop](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Create%20Shop.PNG) <br/>
- Create stylist page
+ Create stylist page <br/>
  ![CreateStylist](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Create%20Stylist.PNG)
 
 ## Specifications
