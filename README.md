@@ -9,12 +9,18 @@
 This is an Android application that allows users to search for local barber shops and make appointment to a selected barber shop.
 
 ## Screenshots
-Homepage <br/>
- ![Homepage](https://github.com/kimlan1510/Makapointment/blob/master/Content/img/HomePage.PNG) <br/>
- Ailment page <br/>
- ![AilmentPage](https://github.com/kimlan1510/Medicine/blob/kimlan/Content/img/AilmentPage.PNG) <br/>
- Details page <br/>
- ![DetailPage](https://github.com/kimlan1510/Medicine/blob/kimlan/Content/img/DetailPage.PNG)
+Shops page <br/>
+ ![Homepage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Shop%20Page.PNG) <br/>
+ Favorite page <br/>
+ ![FavoritePage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Favorite%20Page.PNG) <br/>
+ Stylists page <br/>
+ ![StylistsPage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Stylists%20Page.PNG) <br/>
+ Shop detail page
+ ![ShopDetailPage](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Shop%20Detail.PNG) <br/>
+ Create shop page
+ ![CreateShop](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Create%20Shop.PNG) <br/>
+ Create stylist page
+ ![CreateStylist](https://github.com/kimlan1510/Makapointment/blob/master/Makapointment/Makapointment/Images/Create%20Stylist.PNG)
 
 ## Specifications
 
