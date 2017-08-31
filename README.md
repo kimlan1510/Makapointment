@@ -9,7 +9,12 @@
 This is an Android application that allows users to search for local barber shops and make appointment to a selected barber shop.
 
 ## Screenshots
-
+Homepage <br/>
+ ![Homepage](https://github.com/kimlan1510/Makapointment/blob/master/Content/img/HomePage.PNG) <br/>
+ Ailment page <br/>
+ ![AilmentPage](https://github.com/kimlan1510/Medicine/blob/kimlan/Content/img/AilmentPage.PNG) <br/>
+ Details page <br/>
+ ![DetailPage](https://github.com/kimlan1510/Medicine/blob/kimlan/Content/img/DetailPage.PNG)
 
 ## Specifications
 
