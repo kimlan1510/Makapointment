@@ -45,15 +45,13 @@ namespace Makapointment
 
         private async void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var test = _shop;
+            var shop = _shop;
             var selectedStylist = e.Item as Stylist;
-         
-            selectedStylist.Shops.Add(_shop);
-            _shop.Stylists.Add(selectedStylist);
-            await _conn.UpdateWithChildrenAsync(_shop);
-            await _conn.UpdateWithChildrenAsync(selectedStylist);
+            _shop.Stylists = new List<Stylist> { selectedStylist };
+            await _conn.InsertOrReplaceWithChildrenAsync(_shop);
 
-
+            //selectedStylist.Shops = new List<Shop> { _shop };
+            //await _conn.UpdateWithChildrenAsync(selectedStylist);
             await Navigation.PopAsync();
 
         }

@@ -31,7 +31,7 @@ namespace Makapointment
 
         protected override void OnAppearing()
         {
-            var listStylists = _conn.GetWithChildrenAsync<Shop>(_shop.Id, true);
+            var listStylists = _conn.GetWithChildrenAsync<Shop>(_shop.Id, recursive: true);
             var result = listStylists.Result.Stylists.ToList();
 
             listView.ItemsSource = new ObservableCollection<Stylist>(result);

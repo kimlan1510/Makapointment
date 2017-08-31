@@ -16,13 +16,15 @@ namespace Makapointment.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
-        [ManyToMany(typeof(Shop_Stylist), CascadeOperations = CascadeOperation.CascadeRead | CascadeOperation.CascadeInsert)]
+
+        [ManyToMany(typeof(Shop_Stylist), "ShopId", "Stylists")]
+       
         public List<Shop> Shops { get; set; }
 
         public Stylist()
         {
             Image = "http://lorempixel.com/600/400/people";
-            Shops = new List<Shop>();
+           
         }
     }
 }
