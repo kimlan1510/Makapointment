@@ -6,7 +6,7 @@
 
 ## Description
 
-This is an Android application that allows users to search for local barber shops and make appointment to a selected barber shop.
+This is an Android application that allows users to search for local barber shops and make appointment to a selected barber shop. This is a work in progress.
 
 ## Screenshots
 Shops page <br/>
